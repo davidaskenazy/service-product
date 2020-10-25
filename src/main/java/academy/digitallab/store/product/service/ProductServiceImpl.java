@@ -3,14 +3,15 @@ package academy.digitallab.store.product.service;
 import academy.digitallab.store.product.entity.Category;
 import academy.digitallab.store.product.entity.Product;
 import academy.digitallab.store.product.repository.ProductRepository;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Date;
 import java.util.List;
-
+@RequiredArgsConstructor
 public class ProductServiceImpl implements ProductService{
-    @Autowired
-    private ProductRepository productRepository;
+
+    private final ProductRepository productRepository;
 
     @Override
     public List<Product> listAllProduct() {

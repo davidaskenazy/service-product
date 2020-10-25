@@ -1,6 +1,7 @@
 package academy.digitallab.store.product.entity;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -11,7 +12,7 @@ import java.util.Date;
 @Table(name = "tbl_products")
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
+@NoArgsConstructor @Builder
 public class Product {
 
     @Id
