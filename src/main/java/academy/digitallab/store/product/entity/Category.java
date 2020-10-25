@@ -1,14 +1,12 @@
 package academy.digitallab.store.product.entity;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "tbl_categories")
-@Data
+@Data @AllArgsConstructor @NoArgsConstructor @Builder
 public class Category {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
