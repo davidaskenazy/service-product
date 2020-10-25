@@ -5,9 +5,12 @@ import academy.digitallab.store.product.entity.Product;
 import academy.digitallab.store.product.repository.ProductRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.Date;
 import java.util.List;
+
+@Service
 @RequiredArgsConstructor
 public class ProductServiceImpl implements ProductService{
 

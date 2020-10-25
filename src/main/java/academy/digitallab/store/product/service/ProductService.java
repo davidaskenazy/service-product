@@ -2,6 +2,7 @@ package academy.digitallab.store.product.service;
 
 import academy.digitallab.store.product.entity.Category;
 import academy.digitallab.store.product.entity.Product;
+
 import java.util.List;
 
 public interface ProductService {
